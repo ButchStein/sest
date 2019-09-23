@@ -1,68 +1,25 @@
 html,
 body {
+  margin: 0;
+  padding: 0;
   width: 100%;
-  max-width: 1920px;
+  max-width: 100%;
   height: 100%;
   overflow: hidden;
-  font-family: 'Open Sans Light', sans-serif;
+  font-family: "Open Sans Light", sans-serif;
 }
 .main {
-  position: relative;
-  overflow: hidden;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
   height: 100%;
 }
-@font-face {
-	font-family: 'Georgia';
-	src: url('Georgia-BoldItalic.eot');
-	src: local('Georgia Bold Italic'), local('Georgia-BoldItalic'),
-		url('Georgia-BoldItalic.eot?#iefix') format('embedded-opentype'),
-		url('Georgia-BoldItalic.woff') format('woff'),
-		url('Georgia-BoldItalic.ttf') format('truetype');
-	font-weight: bold;
-	font-style: italic;
-}
 
 @font-face {
-	font-family: 'Georgia';
-	src: url('Georgia-Italic.eot');
-	src: local('Georgia Italic'), local('Georgia-Italic'),
-		url('Georgia-Italic.eot?#iefix') format('embedded-opentype'),
-		url('Georgia-Italic.woff') format('woff'),
-		url('Georgia-Italic.ttf') format('truetype');
-	font-weight: normal;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: 'Georgia';
-	src: url('Georgia-Bold.eot');
-	src: local('Georgia Bold'), local('Georgia-Bold'),
-		url('Georgia-Bold.eot?#iefix') format('embedded-opentype'),
-		url('Georgia-Bold.woff') format('woff'),
-		url('Georgia-Bold.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Georgia';
-	src: url('Georgia.eot');
-	src: local('Georgia'),
-		url('Georgia.eot?#iefix') format('embedded-opentype'),
-		url('Georgia.woff') format('woff'),
-		url('Georgia.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-  font-family: 'Lora';
-  src: url('Lora-Italic.eot');
-  src: local('Lora Italic'), local('Lora-Italic'),
-      url('Lora-Italic.eot?#iefix') format('embedded-opentype'),
-      url('Lora-Italic.woff') format('woff'),
-      url('Lora-Italic.ttf') format('truetype');
+  font-family: "Georgia";
+  src: url("Georgia.eot");
+  src: local("Georgia"), url("Georgia.eot?#iefix") format("embedded-opentype"), url("Georgia.woff") format("woff"),
+    url("Georgia.ttf") format("truetype");
   font-weight: normal;
-  font-style: italic;
+  font-style: normal;
 }
-
