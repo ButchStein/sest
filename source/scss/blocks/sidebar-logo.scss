@@ -42,3 +42,19 @@
   padding-left: 2.3125rem;
   margin-top: 2.1875rem;
 }
+@media (max-width: 992px) {
+  .sidebar-logo-text {
+    display: none;
+  }
+  .sidebar-logo-description {
+    display: none;
+  }
+  .sidebar-logo-title {
+    border: none;
+    margin-top: 0;
+    padding: .5rem;
+  }
+  .sidebar-logo {
+    background-image: none;
+  }
+}

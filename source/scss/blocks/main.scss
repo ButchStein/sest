@@ -14,7 +14,18 @@ body {
   justify-content: space-between;
   height: 100%;
 }
-
+.burger {
+  display: none;
+}
+@media (max-width: 992px) {
+  .main {
+    display: block;
+  }
+  .burger {
+    display: block;
+    border-right: 1px solid #585757;
+  }
+}
 @font-face {
   font-family: "Georgia";
   src: url("Georgia.eot");

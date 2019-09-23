@@ -3,5 +3,13 @@
 @import "./blocks/sidebar.scss";
 @import "./blocks/sidebar-logo.scss";
 @import "./blocks/sidebar-navigation.scss";
+@import "./blocks/modal.scss";
 @import "./node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
-@import "./node_modules/mmenu-js/dist/mmenu";
+@import "./node_modules/mmenu-js/src/mmenu.scss";
+
+.mm-navbar__title {
+  font-family: "Noto Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+}

@@ -18,17 +18,47 @@
 </head>
 
 <body>
+	<nav id="my-menu" class="mmenu">
+		<ul class="sidebar-list">
+			<li class="nav-item">
+				<a class="nav-link" href="#">Каталог товаров</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">новости и акции</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">наши услуги</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">портфолио</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">блог</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">контакты</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">О компании</a></li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Отзывы о нас</a></li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Доставка и оплата</a></li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Дизайнеры</a></li>
+		</ul>
+	</nav>
+	</div>
 	<div class="main">
-
 		<div class="sidebar">
-			<div class="burger" id="burger">
-				<a class="hamburger hamburger--slider" href="#my-menu">
-					<div class="hamburger-box">
-						<div class="hamburger-inner"></div>
-					</div>
-				</a>
-			</div>
 			<div class="sidebar-logo">
+				<div class="burger" id="burger">
+					<a class="hamburger hamburger--slider" href="#my-menu">
+						<div class="hamburger-box">
+							<div class="hamburger-inner"></div>
+						</div>
+					</a>
+				</div>
 				<h1 class="sidebar-logo-title">сияние</h1>
 				<p class="sidebar-logo-text">декор центр</p>
 				<p class="sidebar-logo-description">Интернет-магазин отделочных материалов и дизайна.</p>
@@ -63,37 +93,10 @@
 					<li class="links-item"><a href="#">Дизайнеры</a></li>
 				</ul>
 			</nav>
-			<nav id="my-menu" class="mmenu">
-				<li class="">
-					<a class="" href="#">Каталог товаров</a>
-				</li>
-				<li class="">
-					<a class="" href="#">новости и акции</a>
-				</li>
-				<li class="">
-					<a class="" href="#">наши услуги</a>
-				</li>
-				<li class="">
-					<a class="" href="#">портфолио</a>
-				</li>
-				<li class="">
-					<a class="" href="#">блог</a>
-				</li>
-				<li class="">
-					<a class="" href="#">контакты</a>
-				</li>
-				<li class="">
-					<a href="#">О компании</a></li>
-				<li class="">
-					<a href="#">Отзывы о нас</a></li>
-				<li class="">
-					<a href="#">Доставка и оплата</a></li>
-				<li class="">
-					<a href="#">Дизайнеры</a></li>
-			</nav>
+
 			<div class="sidebar-phone">
 				<p class="sidebar-phone-number">+7 (4822) 648-080</p>
-				<a href="" class="sidebar-phone-text">Заказать звонок</a>
+				<button class="sidebar-phone-text" id="open-button">Заказать звонок</button>
 			</div>
 
 		</div>
@@ -115,6 +118,26 @@
 			</div>
 		</div>
 	</div>
+	<!-- <div class="modal" id="modal">
+			<div class="modal-image">
+				<img src="/source/img/form_img.jpg" alt="form_img" class="modal-image">
+			</div>
+			<form action="#" class="modal-form">
+				<div class="modal-form-fields">
+					<h2 class="modal-form-title">Обратная связь</h2>
+					<label for="email">Email <sup>*</sup><input type="text" name="email" class="form-input"></label>
+					<label for="tel">Телефон <sup>*</sup><input type="text" name="tel" class="form-input"></label>
+					<label for="message">Сообщение <textarea name="message" class="form-text"></textarea></label>
+					<button type="submit" class="form-button">Отправить</button>
+				</div>
+				<div class="modal-overlay"></div>
+			</form>
+		</div> -->
+	</div>
+
+
+
+
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./source/owlcarousel/owl.carousel.min.js"></script>
@@ -126,11 +149,15 @@
 			$('#burger').on('click', function () {
 				$("#my-menu").mmenu({
 					extensions: ["theme-light", "pagedim-light"],
+					navbar: { 
+						title: 'Основное меню сайта'
+
+					}
 				});
 			})
 		)
 	</script>
-
+	<script src="/source/js/script.js"></script>
 </body>
 
 </html>
