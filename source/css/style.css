@@ -4,7 +4,7 @@ body {
   padding: 0;
   width: 100%;
   max-width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
   font-family: "Open Sans Light", sans-serif; }
 
@@ -19,7 +19,10 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100%; }
+  height: 100vh;
+  background-image: url(/source/img/tablet_bg.png);
+  background-size: cover;
+  width: 100%; }
 
 .burger {
   display: none; }
@@ -50,7 +53,7 @@ body {
 
 .main-slider-image {
   width: 100%;
-  height: 100vh; }
+  height: 100%; }
 
 .main-slider-title {
   font-family: "Noto Sans", sans-serif;
@@ -58,31 +61,22 @@ body {
   color: #f0f0f0;
   font-size: 58px;
   font-weight: normal;
-  padding: 0 1.25rem 3rem 0.625rem;
+  line-height: 3.8rem;
+  padding: 0.175rem 1.25rem 0.175rem 0.625rem;
   position: absolute;
-  z-index: 3;
-  top: 65%;
-  left: 30%;
-  background-image: url(/source/img/slide-layer-bg.png); }
+  z-index: 1;
+  bottom: 155px;
+  left: 105px;
+  background-image: url(/source/img/slide-layer-bg.png);
+  margin: 0; }
 
 .main-slider-text {
-  font-family: "Noto Sans", sans-serif;
-  text-transform: uppercase;
-  color: #f0f0f0;
-  position: absolute;
-  z-index: 2;
-  font-size: 36px;
-  top: 75.5%;
-  left: 30%;
-  background-image: url(/source/img/slide-layer-bg.png);
-  background-repeat: no-repeat;
-  background-position: 30px 0;
-  padding: 2rem 17.25rem 2rem 0.625rem; }
+  font-size: 36px; }
 
 .main-slider-button {
   position: absolute;
-  top: 88%;
-  left: 31%;
+  bottom: 100px;
+  left: 130px;
   background-color: #b36060;
   font-family: "Lora", sans-serif;
   font-style: italic;
@@ -96,10 +90,14 @@ body {
   background-position: 160px 19px;
   cursor: pointer; }
 
-@media (max-width: 992px) {
+@media (max-width: 1440px) {
   .main-slider {
     width: 100%;
-    height: 50%; } }
+    height: 100%; }
+  .main-slider-item {
+    height: 100%; }
+  .main-slider-image {
+    height: 100%; } }
 
 .sidebar {
   background-image: url(/source/img/menu_bg.png);
@@ -3325,5 +3323,78 @@ body.modal-open .mm-slideout {
 
 .mm-btn {
   --mm-color-button: #d4d1ca; }
+
+.mm-wrapper {
+  background-image: url(/source/img/tablet_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%; }
+
+@media (max-width: 1440px) {
+  .owl-dots {
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 100%; }
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel button.owl-dot {
+    background-image: url(/source/img/pag_small_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 12px;
+    width: 11px;
+    margin: 0 0.2rem; }
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel button.owl-dot.active {
+    background-image: url(/source/img/pag_icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 12px;
+    width: 11px; } }
+
+.owl-dots {
+  position: absolute;
+  bottom: 40px;
+  left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+  background-image: url(/source/img/desk_pag_small_icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 10px;
+  width: 10px;
+  margin: 0 0.4rem; }
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot.active {
+  background-image: url(/source/img/desk_pag_icon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 16px;
+  width: 16px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,7 +4,7 @@ body {
   padding: 0;
   width: 100%;
   max-width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
   font-family: "Open Sans Light", sans-serif;
 }
@@ -12,7 +12,10 @@ body {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
-  height: 100%;
+	height: 100vh;
+	background-image: url(/source/img/tablet_bg.png);
+  background-size: cover;
+  width: 100%;
 }
 .burger {
   display: none;

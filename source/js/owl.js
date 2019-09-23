@@ -6,8 +6,28 @@ owl.owlCarousel({
   autoplay: false,
   autoplayTimeout: 5000,
   autoplayHoverPause: true,
-  dots: true
-});
+  startPosition: 1,
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1,
+      dots: true
+    },
+    568: {
+      items: 1,
+      dots: true
+    },
+    992: {
+      items: 1,
+      dots: true
+    },
+    1440: {
+      items: 1,
+      dots: true
+    }
+  }
+}
+);
 $('.play').on('click', function () {
   owl.trigger('play.owl.autoplay', [1000])
 });
