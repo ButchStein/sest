@@ -21,10 +21,10 @@ body {
 .burger {
   display: none;
 }
-@media (max-width: 992px) {
-  .main {
-    display: block;
-  }
+@media (max-width: 1440px) {
+  // .main {
+  //   display: block;
+  // }
   .burger {
     display: block;
     border-right: 1px solid #585757;

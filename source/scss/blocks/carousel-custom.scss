@@ -1,8 +1,37 @@
-@media (max-width: 1440px) {
+@media (min-width: 992px) {
   .owl-dots {
     position: absolute;
     bottom: 40px;
     left: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel button.owl-dot {
+    background-image: url(/source/img/desk_pag_small_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10px;
+    width: 10px;
+    margin: 0 0.4rem;
+  }
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel button.owl-dot.active {
+    background-image: url(/source/img/desk_pag_icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (max-width: 991.99px) {
+  .owl-dots {
+    position: absolute;
+    bottom: 13px;
+    left: 7px;
     display: flex;
     flex-flow: row nowrap;
     align-content: center;
@@ -27,31 +56,4 @@
     height: 12px;
     width: 11px;
   }
-}
-.owl-dots {
-  position: absolute;
-  bottom: 40px;
-  left: 100px;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-}
-.owl-carousel .owl-nav button.owl-next,
-.owl-carousel .owl-nav button.owl-prev,
-.owl-carousel button.owl-dot {
-  background-image: url(/source/img/desk_pag_small_icon.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 10px;
-  width: 10px;
-  margin: 0 0.4rem;
-}
-.owl-carousel .owl-nav button.owl-next,
-.owl-carousel .owl-nav button.owl-prev,
-.owl-carousel button.owl-dot.active {
-  background-image: url(/source/img/desk_pag_icon.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 16px;
-  width: 16px;
 }
