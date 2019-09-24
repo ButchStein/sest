@@ -1,10 +1,9 @@
-var elements = $('.modal-overlay, .modal');
+var elements = $('.modal');
 
-$('#open-button').click(function(){
-    elements.addClass('active');
-
+$('#open-button, .sidebar-phone').click(function() {
+  elements.addClass('active');
 });
 
-$('#close-button').click(function(){
-    elements.removeClass('active');
+$('#close-button').click(function() {
+  elements.removeClass('active');
 });

@@ -46,6 +46,54 @@
 .mmenu {
   display: none;
 }
+
+@media (max-width: 568px) {
+  .sidebar {
+    background-image: url(/source/img/menu_bg.png);
+    background-repeat: repeat-x;
+    padding: 0;
+    width: 992px;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: center;
+    .sidebar-links-list {
+      display: none;
+    }
+    .sidebar-phone-number {
+      display: none;
+    }
+    .sidebar-phone-text {
+      display: none;
+    }
+    .sidebar-phone {
+      background-image: url(/source/img/phone-icon.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 17px;
+      height: 18px;
+      margin: auto 0;
+      cursor: pointer;
+      padding: 0.875rem;
+      border-left: 1px solid #585757;
+    }
+    .sidebar-logo {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      .sidebar-logo-title {
+        font-size: 20px;
+        padding: 0.5rem 0.625rem 0.5rem;
+      }
+    }
+  }
+}
 @media (max-width: 992px) {
   .sidebar {
     background-image: url(/source/img/menu_bg.png);
@@ -93,3 +141,4 @@
     }
   }
 }
+

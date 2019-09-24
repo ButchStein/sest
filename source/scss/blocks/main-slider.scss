@@ -59,3 +59,13 @@
     height: 100%;
   }
 }
+
+@media (max-width: 800px) {
+  .main-slider-title {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+  .main-slider-text {
+    font-size: 28px;
+  }
+}

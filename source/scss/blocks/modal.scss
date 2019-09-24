@@ -1,33 +1,50 @@
-.modal-overlay {
+.modal {
   display: none;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1010;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-overlay {
+  position: absolute;
   width: 100%;
   height: 100%;
   z-index: 10;
-  background-color: rgba(#000, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
 }
-.modal {
-  display: none;
-  position: absolute;
-  top: 75%;
-  left: 25%;
-  z-index: 1010;
-  width: 940px;
-  max-width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+
+.modal-body {
+  width: 90%;
+  height: 70%;
   background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 20;
 }
+
 .modal-image {
-  width: 37.6596%;
+  display: none;
   background-image: url(/source/img/form_img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .modal-form {
-  width: 62.3404%;
+  width: 100%;
 }
+
 .modal-form-fields {
   box-sizing: border-box;
   display: flex;
@@ -72,7 +89,7 @@
 }
 .form-button {
   align-self: flex-end;
-  width: 46%;
+  width: 100%;
   font-family: "Lora", sans-serif;
   font-style: italic;
   font-size: 0.785rem;
@@ -80,10 +97,74 @@
   background-color: #db7d3a;
   border: none;
   border-radius: 2px;
-  padding: 0.75rem 0;
+  padding: 0.75rem;
   margin-bottom: 2.3125rem;
   cursor: pointer;
 }
-.active {
-  display: flex;
+
+@media (min-width: 320px) {
+  .modal-body {
+    width: 90%;
+    height: 65%;
+  }
+  .modal-form-fields {
+    padding-left: 0.875rem;
+  }
+  .modal-close {
+    margin-right: 0;
+  }
+}
+@media (min-width: 576px) {
+  .modal-body {
+    width: 80%;
+    height: 65%;
+  }
+  .modal-form-fields {
+    padding-left: 3.75rem;
+  }
+  .modal-close {
+    margin-right: 1.1rem;
+  }
+}
+@media (min-width: 768px) {
+  .modal-body {
+    width: 80%;
+    height: 65%;
+  }
+  .modal-image {
+    width: 80.7021%;
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  .modal-body {
+    width: 80%;
+    height: 65%;
+  }
+  .modal-image {
+    width: 61.7021%;
+    display: block;
+  }
+  .form-button {
+    width: 46%;
+  }
+}
+@media (min-width: 1200px) {
+  .modal-body {
+    width: 80%;
+    max-width: 940px;
+    height: 65%;
+  }
+
+  .modal-image {
+    width: 50.7021%;
+    display: block;
+  }
+
+  .modal-form {
+    width: 62.3404%;
+  }
+  .form-button {
+    width: 46%;
+  }
 }
