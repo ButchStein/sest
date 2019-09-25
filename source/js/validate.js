@@ -122,13 +122,12 @@ var submit = document.querySelector('button[type="submit"');
 
 var form = document.querySelector('modal-form');
 
-
-for (var i = 0; i < inputs.length; i++) {
-  if (inputs[i].classList.contains('valid')) {
-    submit.setAttribute(['disabled'], false);
+function validate() {
+  for (var i = 0; i < inputs.length; i++) {
+    inputs[i].CustomValidation.checkInput();
+    if (inputs[i].classList.contains('invalid') || inputs[i].value ==='') {
+      event.preventDefault();
+    }
   }
-
 }
-
-
-// form.addEventListener('click', validate);
+document.addEventListener('submit', validate);
