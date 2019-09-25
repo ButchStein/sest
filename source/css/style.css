@@ -484,14 +484,26 @@ body {
   padding: 0; }
 
 .nav-item {
+  position: relative;
   width: 100%;
   padding: 1.1rem 2.3125rem;
   border-bottom: 1px solid #545252; }
 
 .nav-item-promo {
+  position: absolute;
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: .75rem;
+  font-weight: normal;
+  width: 34px;
+  height: 23px;
   background-image: url(/source/img/flag_bg.png);
   background-repeat: no-repeat;
-  background-position: right center; }
+  background-position: right 1px;
+  left: 266px;
+  bottom: 16px;
+  text-align: center;
+  line-height: 2; }
 
 .nav-link {
   text-transform: uppercase;

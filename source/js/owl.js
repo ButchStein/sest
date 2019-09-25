@@ -3,7 +3,7 @@ owl.owlCarousel({
   items: 1,
   loop: true,
   margin: 0,
-  autoplay: false,
+  autoplay: true,
   autoplayTimeout: 5000,
   autoplayHoverPause: true,
   startPosition: 1,
