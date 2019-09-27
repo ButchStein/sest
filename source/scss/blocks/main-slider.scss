@@ -57,6 +57,10 @@
   background-repeat: no-repeat;
   background-position: 160px 19px;
   cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+.main-slider-button:hover {
+  background-color: #b64444;
 }
 @media (max-width: 1440px) {
   .main-slider {

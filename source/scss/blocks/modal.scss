@@ -102,10 +102,16 @@
   cursor: pointer;
 }
 
-@media (min-width: 320px) {
+@media (max-width: 575.99px) {
   .modal-body {
     width: 90%;
-    height: 90%;
+    height: 60%;
+  }
+  .modal-form-fields{
+    padding-left: 0.5rem;
+  }
+  .modal-close{
+    margin-right: 0;
   }
 }
 @media (min-width: 576px) {
@@ -138,7 +144,7 @@
   .modal-body {
     width: 80%;
     max-width: 940px;
-    height: 65%;
+    height: 70%;
     max-height: 540px;
   }
 

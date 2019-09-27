@@ -17,6 +17,7 @@
   font-family: "Open Sans", sans-serif;
   font-size: 0.75rem;
   font-weight: normal;
+  color: #f7f7f7;
   width: 34px;
   height: 23px;
   background-image: url(../img/flag_bg.png);
@@ -27,11 +28,18 @@
   text-align: center;
   line-height: 2;
 }
+.nav-link:hover > .nav-item-promo {
+  color: #f7f7f7;
+}
 .nav-link {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 16px;
   color: #f7f7f7;
+  transition: all 0.5s ease;
+}
+.nav-link:hover {
+  color: #864d4d;
 }
 @media (max-width: 1440px) {
   .sidebar-navigation {
