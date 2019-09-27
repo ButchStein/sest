@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta http-equiv="Content-Security-Police" content="default-src 'nonce';script-src 'http://localhost:3000/form.php' 'unsafe-inline' hash 'sha256-ThhI8UaSFEbbl6cISiZpnJ4Z44uNSq2tPKgyRTD3LyU='"/>
   <link rel="stylesheet" href="./source/owlcarousel/assets/owl.carousel.min.css" />
   <link rel="stylesheet" href="./source/owlcarousel/assets/owl.theme.default.min.css" />
   <link
@@ -193,7 +194,7 @@
     <div class="modal-overlay"></div>
     <div class="modal-body">
       <div class="modal-image"></div>
-      <form class="modal-form">
+      <form action="form.php" class="modal-form" method="POST">
         <div class="modal-form-fields">
           <h2 class="modal-form-title">Обратная связь</h2>
           <label for="email" class="modal-form-label">Email <sup>*</sup><br /><span class="error"></span><input
