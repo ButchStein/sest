@@ -4,7 +4,7 @@
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-  background-image: url(/source/img/logo_line.png);
+  background-image: url(./source/img/logo_line.png);
   background-repeat: no-repeat;
   background-position: 47px 117px;
 }
@@ -30,7 +30,7 @@
   bottom: 80px;
   right: 50px;
   z-index: 3;
-  background-image: url(/source/img/menu_bg.png);
+  background-image: url(./source/img/menu_bg.png);
   background-repeat: no-repeat;
   padding: 0 0.5rem;
 }

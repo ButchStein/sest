@@ -1,6 +1,5 @@
 .sidebar-navigation {
   display: flex;
-  // margin: 5rem 0 4rem;
 }
 .sidebar-list {
   list-style: none;
@@ -16,11 +15,11 @@
   position: absolute;
   display: block;
   font-family: "Open Sans", sans-serif;
-  font-size: .75rem;
+  font-size: 0.75rem;
   font-weight: normal;
   width: 34px;
   height: 23px;
-  background-image: url(/source/img/flag_bg.png);
+  background-image: url(./source/img/flag_bg.png);
   background-repeat: no-repeat;
   background-position: right 1px;
   left: 266px;

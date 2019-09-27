@@ -14,7 +14,7 @@ body {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
-  background-image: url(/source/img/tablet_bg.png);
+  background-image: url(./source/img/tablet_bg.png);
 	background-size: cover;
 	position: relative;
 }
@@ -33,7 +33,7 @@ body {
 @font-face {
   font-family: "Georgia";
   src: url("Georgia.eot");
-  src: local("Georgia"), url("Georgia.eot?#iefix") format("embedded-opentype"), url("Georgia.woff") format("woff"),
+  src: local("./source/fonts/Georgia/Georgia.ttf"), url("Georgia.eot?#iefix") format("embedded-opentype"), url("Georgia.woff") format("woff"),
     url("Georgia.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;

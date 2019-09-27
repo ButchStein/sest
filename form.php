@@ -1,5 +1,4 @@
 <?php
-// require_once './source/php/config.php';
 require_once './source/php/functions.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
