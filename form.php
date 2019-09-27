@@ -1,6 +1,5 @@
 <?php
-require_once './source/php/functions.php';
-
+require_once '../php/functions.php';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $email = $_POST['email'];
   $email = check_symbol($email, "Ваш E-mail", "1", "/^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,6}\z/i");
