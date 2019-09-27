@@ -21,7 +21,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-image: url(./source/img/tablet_bg.png);
+  background-image: url(../img/tablet_bg.png);
   background-size: cover;
   position: relative; }
 
@@ -35,8 +35,8 @@ body {
 
 @font-face {
   font-family: "Georgia";
-  src: url("Georgia.eot");
-  src: local("./source/fonts/Georgia/Georgia.ttf"), url("Georgia.eot?#iefix") format("embedded-opentype"), url("Georgia.woff") format("woff"), url("Georgia.ttf") format("truetype");
+  src: url("../fonts/Georgia/Georgia.eot");
+  src: url("../fonts/Georgia/Georgia.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia/Georgia.woff") format("woff"), url("../fonts/Georgia/Georgia.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -66,11 +66,11 @@ body {
   z-index: 3;
   bottom: 155px;
   left: 100px;
-  background-image: url(./source/img/slide-layer-bg.png);
+  background-image: url(../img/slide-layer-bg.png);
   margin: 0; }
 
 .main-slider-title-bg {
-  background-image: url(./source/img/slide-layer2-bg.png);
+  background-image: url(../img/slide-layer2-bg.png);
   background-size: 100%;
   height: 137px;
   z-index: 1;
@@ -95,7 +95,7 @@ body {
   font-size: 18px;
   border: none;
   padding: 13px 85px 13px 25px;
-  background-image: url(./source/img/arrow.png);
+  background-image: url(../img/arrow.png);
   background-repeat: no-repeat;
   background-position: 160px 19px;
   cursor: pointer; }
@@ -119,7 +119,7 @@ body {
     line-height: 1.2;
     padding: 0.4875rem 1.75rem 0.4875rem 0.8rem; }
   .main-slider-title-bg {
-    background-image: url(./source/img/slide-layer2-bg.png);
+    background-image: url(../img/slide-layer2-bg.png);
     width: 482px;
     height: 92px;
     bottom: 72px;
@@ -135,7 +135,7 @@ body {
     padding: 0 15px;
     font-size: 14px;
     text-align: left;
-    background-image: url(./source/img/arrow_mob.png);
+    background-image: url(../img/arrow_mob.png);
     background-position: 115px 13px; } }
 
 @media (max-width: 767.98px) {
@@ -148,7 +148,7 @@ body {
     line-height: 1.2;
     padding: 0.175rem 0.625rem 0.175rem 0.625rem; }
   .main-slider-title-bg {
-    background-image: url(./source/img/slide-layer2-bg.png);
+    background-image: url(../img/slide-layer2-bg.png);
     width: 288px;
     height: 55px;
     bottom: 56px;
@@ -164,7 +164,7 @@ body {
     padding: 0 10px;
     font-size: 12px;
     text-align: left;
-    background-image: url(./source/img/arrow_mob.png);
+    background-image: url(../img/arrow_mob.png);
     background-position: 100px 10px; } }
 
 @media (max-width: 575.98px) {
@@ -187,7 +187,7 @@ body {
     padding: 0 10px;
     font-size: 12px;
     text-align: left;
-    background-image: url(./source/img/arrow_mob.png);
+    background-image: url(../img/arrow_mob.png);
     background-position: 100px 10px; } }
 
 .sidebar {
@@ -195,7 +195,7 @@ body {
   max-width: 300px;
   padding: 0;
   background-color: #3c3a3a;
-  background-image: url(./source/img/menu_bg.png);
+  background-image: url(../img/menu_bg.png);
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -251,7 +251,7 @@ body {
 
 @media (max-width: 1440px) {
   .sidebar {
-    background-image: url(./source/img/menu_bg.png);
+    background-image: url(../img/menu_bg.png);
     background-repeat: repeat-x;
     padding: 0;
     width: 1440px;
@@ -278,7 +278,7 @@ body {
     .sidebar .sidebar-phone-text {
       display: none; }
     .sidebar .sidebar-phone {
-      background-image: url(./source/img/phone-icon.png);
+      background-image: url(../img/phone-icon.png);
       background-repeat: no-repeat;
       background-position: center;
       width: 17px;
@@ -305,7 +305,7 @@ body {
 
 @media (max-width: 992px) {
   .sidebar {
-    background-image: url(./source/img/menu_bg.png);
+    background-image: url(../img/menu_bg.png);
     background-repeat: repeat-x;
     padding: 0;
     width: 992px;
@@ -334,7 +334,7 @@ body {
     .sidebar .sidebar-phone-text {
       display: none; }
     .sidebar .sidebar-phone {
-      background-image: url(./source/img/phone-icon.png);
+      background-image: url(../img/phone-icon.png);
       background-repeat: no-repeat;
       background-position: center;
       width: 17px;
@@ -388,7 +388,7 @@ body {
     .sidebar .sidebar-phone-text {
       display: none; }
     .sidebar .sidebar-phone {
-      background-image: url(./source/img/phone-icon_mob.png);
+      background-image: url(../img/phone-icon_mob.png);
       background-repeat: no-repeat;
       background-position: center;
       width: 17px;
@@ -425,7 +425,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-image: url(./source/img/logo_line.png);
+  background-image: url(../img/logo_line.png);
   background-repeat: no-repeat;
   background-position: 47px 117px; }
 
@@ -451,7 +451,7 @@ body {
   bottom: 80px;
   right: 50px;
   z-index: 3;
-  background-image: url(./source/img/menu_bg.png);
+  background-image: url(../img/menu_bg.png);
   background-repeat: no-repeat;
   padding: 0 0.5rem; }
 
@@ -498,7 +498,7 @@ body {
   font-weight: normal;
   width: 34px;
   height: 23px;
-  background-image: url(./source/img/flag_bg.png);
+  background-image: url(../img/flag_bg.png);
   background-repeat: no-repeat;
   background-position: right 1px;
   left: 266px;
@@ -3491,7 +3491,7 @@ body.modal-open .mm-slideout {
   --mm-color-button: #d4d1ca; }
 
 .mm-wrapper {
-  background-image: url(./source/img/tablet_bg.png);
+  background-image: url(../img/tablet_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%; }
@@ -3558,7 +3558,7 @@ body.modal-open .mm-slideout {
   .owl-carousel .owl-nav button.owl-next,
   .owl-carousel .owl-nav button.owl-prev,
   .owl-carousel button.owl-dot {
-    background-image: url(./source/img/desk_pag_small_icon.png);
+    background-image: url(../img/desk_pag_small_icon.png);
     background-repeat: no-repeat;
     background-position: center;
     height: 10px;
@@ -3567,7 +3567,7 @@ body.modal-open .mm-slideout {
   .owl-carousel .owl-nav button.owl-next,
   .owl-carousel .owl-nav button.owl-prev,
   .owl-carousel button.owl-dot.active {
-    background-image: url(./source/img/desk_pag_icon.png);
+    background-image: url(../img/desk_pag_icon.png);
     background-position: center;
     background-repeat: no-repeat;
     height: 16px;
@@ -3591,7 +3591,7 @@ body.modal-open .mm-slideout {
   .owl-carousel .owl-nav button.owl-next,
   .owl-carousel .owl-nav button.owl-prev,
   .owl-carousel button.owl-dot {
-    background-image: url(./source/img/pag_small_icon.png);
+    background-image: url(../img/pag_small_icon.png);
     background-repeat: no-repeat;
     background-position: center;
     height: 12px;
@@ -3600,7 +3600,7 @@ body.modal-open .mm-slideout {
   .owl-carousel .owl-nav button.owl-next,
   .owl-carousel .owl-nav button.owl-prev,
   .owl-carousel button.owl-dot.active {
-    background-image: url(./source/img/pag_icon.png);
+    background-image: url(../img/pag_icon.png);
     background-position: center;
     background-repeat: no-repeat;
     height: 12px;
@@ -3650,7 +3650,7 @@ body.modal-open .mm-slideout {
 
 .modal-image {
   display: none;
-  background-image: url(./source/img/form_img.jpg);
+  background-image: url(../img/form_img.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
 
@@ -3677,7 +3677,7 @@ body.modal-open .mm-slideout {
       align-self: flex-start;
   width: 17px;
   height: 17px;
-  background-image: url(./source/img/close_icon.png);
+  background-image: url(../img/close_icon.png);
   background-repeat: no-repeat;
   margin: 1.1rem;
   padding: 0.5rem;

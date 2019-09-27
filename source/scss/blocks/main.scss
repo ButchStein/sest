@@ -14,17 +14,14 @@ body {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
-  background-image: url(./source/img/tablet_bg.png);
-	background-size: cover;
-	position: relative;
+  background-image: url(../img/tablet_bg.png);
+  background-size: cover;
+  position: relative;
 }
 .burger {
   display: none;
 }
 @media (max-width: 1440px) {
-  // .main {
-  //   display: block;
-  // }
   .burger {
     display: block;
     border-right: 1px solid #585757;
@@ -32,9 +29,9 @@ body {
 }
 @font-face {
   font-family: "Georgia";
-  src: url("Georgia.eot");
-  src: local("./source/fonts/Georgia/Georgia.ttf"), url("Georgia.eot?#iefix") format("embedded-opentype"), url("Georgia.woff") format("woff"),
-    url("Georgia.ttf") format("truetype");
+  src: url("../fonts/Georgia/Georgia.eot");
+  src: url("../fonts/Georgia/Georgia.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Georgia/Georgia.woff") format("woff"), url("../fonts/Georgia/Georgia.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
