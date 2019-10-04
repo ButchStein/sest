@@ -18,15 +18,25 @@
   font-size: 0.75rem;
   font-weight: normal;
   color: #f7f7f7;
-  width: 34px;
+  min-width: 24px;
   height: 23px;
-  background-image: url(../img/flag_bg.png);
+  background-color: #b36060;
+  right: 0;
+  bottom: 16px;
+  padding-left: 0.25rem;
+  line-height: 2;
+}
+.nav-item-promo::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 24px;
+  background-image: url(../img/flag_bg.svg);
   background-repeat: no-repeat;
   background-position: right 1px;
-  left: 266px;
-  bottom: 16px;
-  text-align: center;
-  line-height: 2;
+  position: absolute;
+  left: -9px;
+  bottom: 0;
 }
 .nav-link:hover > .nav-item-promo {
   color: #f7f7f7;
@@ -41,7 +51,7 @@
 .nav-link:hover {
   color: #864d4d;
 }
-@media (max-width: 1440px) {
+@media (max-width: 991.98px) {
   .sidebar-navigation {
     display: none;
   }

@@ -2,6 +2,7 @@
   min-width: 300px;
   max-width: 300px;
   padding: 0;
+  height: 100vh;
   background-color: #3c3a3a;
   background-image: url(../img/menu_bg.png);
   overflow: hidden;
@@ -17,7 +18,7 @@
   list-style: none;
 }
 .links-item {
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0;
   a {
     text-decoration: none;
     color: #bdbdbd;
@@ -29,16 +30,22 @@
   color: #864d4d;
 }
 .sidebar-phone {
-  margin-bottom: 2.8125rem;
+  margin-top: 2.8125rem;
+  align-self: end;
 }
 .sidebar-phone-number {
+  align-self: flex-end;
   font-weight: 300;
   color: #fefefe;
   font-size: 1.25rem;
   padding: 1.25rem 2.3125rem 0;
   margin: 0;
+  text-decoration: none;
 }
-.sidebar-phone-text {
+.sidebar-link {
+  margin-bottom: 3.125rem;
+}
+.modal-link-text {
   color: #c57c40;
   font-size: 1rem;
   border: none;
@@ -50,7 +57,7 @@
 .mmenu {
   display: none;
 }
-@media (max-width: 1440px) {
+@media (max-width: 991.98px) {
   .sidebar {
     background-image: url(../img/menu_bg.png);
     background-repeat: repeat-x;
@@ -68,21 +75,10 @@
     align-content: center;
     .sidebar-links-list,
     .sidebar-phone-number,
-    .sidebar-phone-text {
+    .modal-link-text {
       display: none;
     }
 
-    .sidebar-phone {
-      background-image: url(../img/phone-icon.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 17px;
-      height: 18px;
-      margin: auto 0;
-      cursor: pointer;
-      padding: 0.875rem 1.2rem;
-      border-left: 1px solid #585757;
-    }
     .sidebar-logo {
       display: flex;
       flex-flow: row nowrap;
@@ -95,7 +91,7 @@
     }
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
   .sidebar {
     background-image: url(../img/menu_bg.png);
     background-repeat: repeat-x;
@@ -117,11 +113,12 @@
     .sidebar-phone-number {
       display: none;
     }
-    .sidebar-phone-text {
+    .modal-link-text {
       display: none;
     }
-    .sidebar-phone {
-      background-image: url(../img/phone-icon.png);
+    .sidebar-modal-link {
+      display: block;
+      background-image: url(../img/phone-icon_mob.png);
       background-repeat: no-repeat;
       background-position: center;
       width: 17px;
@@ -131,6 +128,7 @@
       padding: 0.875rem;
       border-left: 1px solid #585757;
     }
+
     .sidebar-logo {
       display: flex;
       flex-flow: row nowrap;
@@ -142,7 +140,7 @@
     }
   }
 }
-@media (max-width: 568px) {
+@media (max-width: 767.98px) {
   .sidebar {
     background-image: none;
     padding: 0;
@@ -163,19 +161,8 @@
     .sidebar-phone-number {
       display: none;
     }
-    .sidebar-phone-text {
+    .modal-link-text {
       display: none;
-    }
-    .sidebar-phone {
-      background-image: url(../img/phone-icon_mob.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 17px;
-      height: 18px;
-      margin: auto 0;
-      cursor: pointer;
-      padding: 0.875rem;
-      border-left: 1px solid #585757;
     }
     .sidebar-logo {
       display: flex;

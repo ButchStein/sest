@@ -110,7 +110,7 @@
             </nav>
           </div>
         </div>
-        <h1 class="sidebar-logo-title">сияние</h1>
+        <a href="#" class="sidebar-logo-title">сияние</a>
         <p class="sidebar-logo-text">декор центр</p>
         <p class="sidebar-logo-description">
           Интернет-магазин отделочных материалов и дизайна.
@@ -148,41 +148,40 @@
       </nav>
 
       <div class="sidebar-phone">
-        <p class="sidebar-phone-number">+7 (4822) 648-080</p>
-        <button class="sidebar-phone-text" id="open-button">
-          Заказать звонок
-        </button>
+        <a href="tel:+74822648080" class="sidebar-phone-number">+7 (4822) 648-080</a>
+      </div>
+      <div class="sidebar-link">
+        <a class="sidebar-modal-link" id="call_me"><span class="modal-link-text">Заказать звонок</span></a>
       </div>
     </div>
     <div class="main-slider">
       <div class="owl-carousel">
         <div class="main-slider-item">
           <img class="main-slider-image" src="./source/img/slide_1.jpg" alt="slide_1" />
-          <h3 class="main-slider-title">
-            Декоративные покрытия <br /><span class="main-slider-text">от лучших производителей</span>
-          </h3>
-          <span class="main-slider-title-bg"></span>
+          <p class="main-slider-title">
+            Декоративные покрытия<span class="main-slider-text">от лучших производителей</span>
+          </p>
           <button class="main-slider-button">Подробнее</button>
         </div>
         <div class="main-slider-item">
           <img class="main-slider-image" src="./source/img/slide_1.jpg" alt="slide_2" />
-          <h3 class="main-slider-title">
-            Декоративные покрытия <br /><span class="main-slider-text">от лучших производителей</span>
-          </h3><span class="main-slider-title-bg"></span>
+          <p class="main-slider-title">
+            Декоративные покрытия<span class="main-slider-text">от лучших производителей</span>
+          </p>
           <button class="main-slider-button">Подробнее</button>
         </div>
         <div class="main-slider-item">
           <img class="main-slider-image" src="./source/img/slide_1.jpg" alt="slide_3" />
-          <h3 class="main-slider-title">
-            Декоративные покрытия <br /><span class="main-slider-text">от лучших производителей</span>
-          </h3><span class="main-slider-title-bg"></span>
+          <p class="main-slider-title">
+            Декоративные покрытия<span class="main-slider-text">от лучших производителей</span>
+          </p>
           <button class="main-slider-button">Подробнее</button>
         </div>
         <div class="main-slider-item">
           <img class="main-slider-image" src="./source/img/slide_1.jpg" alt="slide_4" />
-          <h3 class="main-slider-title">
-            Декоративные покрытия <br /><span class="main-slider-text">от лучших производителей</span>
-          </h3><span class="main-slider-title-bg"></span>
+          <p class="main-slider-title">
+            Декоративные покрытия<span class="main-slider-text">от лучших производителей</span>
+          </p>
           <button class="main-slider-button">Подробнее</button>
         </div>
       </div>
@@ -195,16 +194,13 @@
       <div class="modal-image"></div>
       <form action="form.php" class="modal-form" method="POST">
         <div class="modal-form-fields">
-          <h2 class="modal-form-title">Обратная связь</h2>
-          <label for="email" class="modal-form-label">Email <sup>*</sup><br /><span class="error"></span><input
-              type="text" name="email" class="form-input" id="email" /></label>
-
-          <label for="tel" class="modal-form-label">Телефон <sup>*</sup><br /><span class="error"></span><input
-              type="text" name="tel" class="form-input" id="phone" />
+          <p class="modal-form-title">Обратная связь</p>
+          <label class="modal-form-label">Email <sup>*</sup><span class="error"></span><input type="text" name="email"
+              class="form-input form-input_email" /></label>
+          <label class="modal-form-label">Телефон <sup>*</sup><span class="error"></span><input type="text" name="tel"
+              class="form-input form-input_phone" />
           </label>
-
-          <label for="message" class="modal-form-label">Сообщение <br /><textarea name="message"
-              class="form-text"></textarea></label>
+          <label class="modal-form-label">Сообщение<textarea name="message" class="form-text"></textarea></label>
           <button type="submit" class="form-button">Отправить</button>
         </div>
       </form>

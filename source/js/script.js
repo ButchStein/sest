@@ -1,6 +1,6 @@
 var elements = $('.modal');
 
-$('#open-button, .sidebar-phone').click(function() {
+$('#call_me').click(function() {
   elements.addClass('active');
 });
 

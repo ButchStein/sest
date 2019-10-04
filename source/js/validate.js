@@ -69,7 +69,7 @@ var phoneValidityChecks = [
       return input.value === "";
     },
     invalidityMessage: 'Поле должно быть заполнено',
-    element: document.getElementById('phone'),
+    element: document.querySelector('.form-input_phone')
 
   },
 
@@ -79,7 +79,7 @@ var phoneValidityChecks = [
       return illegalCharacters ? false : true;
     },
     invalidityMessage: 'Введите корректный номер',
-    element: document.getElementById('phone')
+    element: document.querySelector('.form-input_phone')
   }
 ];
 
@@ -89,7 +89,7 @@ var emailValidityChecks = [
       return input.value === "";
     },
     invalidityMessage: 'Поле должно быть заполнено',
-    element: document.getElementById('email')
+    element: document.querySelector('.form-input_email')
   },
   {
     isInvalid: function (input) {
@@ -97,12 +97,12 @@ var emailValidityChecks = [
       return illegalCharacters ? false : true;
     },
     invalidityMessage: 'Введите корректный E-mail',
-    element: document.getElementById('email')
+    element: document.querySelector('.form-input_email')
   }
 ];
 
-var phoneInput = document.getElementById('phone');
-var emailInput = document.getElementById('email');
+var phoneInput = document.querySelector('.form-input_phone');
+var emailInput = document.querySelector('.form-input_email');
 
 phoneInput.CustomValidation = new CustomValidation(phoneInput);
 phoneInput.CustomValidation.validityChecks = phoneValidityChecks;
