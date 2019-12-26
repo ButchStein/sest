@@ -74,7 +74,16 @@
     height: 100%;
   }
 }
-
+@media (max-width: 1299.98px) {
+  .main-slider-title {
+    font-size: 32px;
+    bottom: 124px;
+    left: 100px;
+  }
+  .main-slider-text {
+    font-size: 20px;
+  }
+}
 @media (max-width: 991.98px) {
   .main-slider-item {
     height: 410px;

@@ -98,14 +98,14 @@
 .form-input {
   width: 100%;
   border: 1px solid #eeeeee;
-  padding: 1rem .2625rem;
+  padding: 1rem 0.2625rem;
   margin: 0.625rem 0 1.875rem;
 }
 .form-text {
   width: 100%;
   height: 105px;
   border: 1px solid #eeeeee;
-  padding: .2625rem;
+  padding: 0.2625rem;
   margin: 0.625rem 0 1.875rem;
   resize: none;
 }
@@ -169,10 +169,12 @@
     width: 62.3404%;
   }
 }
+.required {
+  color: #b75d5d;
+}
 .error {
   color: #b75d5d;
 }
 .invalid {
   border-color: #b75d5d;
-  color: #b75d5d;
 }
